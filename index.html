@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistem Modal - jQuery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+
+<div id="main-container">
+  <h2>Formular Principal</h2>
+  <form id="mainForm">
+    <div class="field-group">
+      <input type="text" class="main-input" placeholder="Nume">
+    </div>
+    <div class="field-group">
+      <input type="text" class="main-input" placeholder="Prenume">
+    </div>
+    <div class="field-group">
+      <input type="text" class="main-input" placeholder="Email">
+    </div>
+    <div class="field-group">
+      <input type="text" class="main-input" placeholder="Telefon">
+    </div>
+    <div class="field-group">
+      <label>Rezultat Concatenat:</label>
+      <input type="text" id="destinationField" class="main-input" readonly>
+    </div>
+    <button type="button" id="btnOpen">Deschide Modal</button>
+  </form>
+</div>
+
+<div id="overlay"></div>
+
+<div id="modalWindow">
+  <h3>Introduceți datele</h3>
+  <div class="modal-inputs">
+    <input type="text" id="m1" placeholder="Data 1">
+    <input type="text" id="m2" placeholder="Data 2">
+    <input type="text" id="m3" placeholder="Data 3">
+    <input type="text" id="m4" placeholder="Data 4">
+  </div>
+  <button type="button" id="btnTransfer">Concatenează și Închide</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
